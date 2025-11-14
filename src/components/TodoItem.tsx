@@ -7,7 +7,7 @@ interface TodoItemProps {
 
 const TodoItem = ({todo, onCompleteChange}: TodoItemProps) => {
   return (
-    <div>
+    <div className='grow'>
       <label className='flex items-center gap-2 border rounded-md p-2 border-gray-400 bg-white hover:bg-slate-50'>
         <input 
         type="checkbox" 
