@@ -28,6 +28,11 @@ This project was created as part of my learning journey to improve my front-end 
 
 ---
 
+## 📸 Screenshot
+
+<img width="900" alt="Todo App Screenshot" src="https://github.com/user-attachments/assets/d8c64d47-3d19-4a39-afad-8ae9fc2da147" />
+
+
 ## 📦 Installation & Setup
 
 Clone the repository:
