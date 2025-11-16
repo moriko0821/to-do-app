@@ -7,15 +7,15 @@ interface TodoItemProps {
 
 const TodoItem = ({todo, onCompleteChange}: TodoItemProps) => {
   return (
-    <div className='grow'>
-      <label className='flex items-center gap-2 border rounded-md p-2 border-gray-400 bg-white hover:bg-slate-50'>
+    <div className='flex-1 min-w-0'>
+      <label className='flex items-center gap-2 border rounded-md p-2 border-gray-400 bg-white hover:bg-slate-50 w-full'>
         <input 
         type="checkbox" 
         onChange={(e) => onCompleteChange(todo.id, e.target.checked)}
         checked={todo.completed}
-        className="scale-125" 
+        className="scale-125 accent-yellow-900 mt-0.5" 
         />
-        <span className={todo.completed ? "line-through text-gray-400" : ""}>
+        <span className={`flex-1 min-w-0 text-left whitespace-normal break-words ${todo.completed ? "line-through text-gray-400" : ""}`}>
             {todo.title}
         </span>
       </label>

@@ -12,7 +12,7 @@ const AddTodoForm = ({onSubmit}: AddTodoFormProps) => {
         e.preventDefault()
 
         if(!input.trim()) return;
-        onSubmit(input)
+        onSubmit(input.trim())
         setInput("")
     }
 
